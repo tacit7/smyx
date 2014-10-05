@@ -109,7 +109,7 @@
       (smyx-gray-6 "#1A1A1A")
       (smyx-gray-7 "#4D4D4D")
       (smyx-gray-8 "#262626")
-
+      (smyx-gray-9 "#8F8F8F")
       (smyx-white "#ffffff")
       (smyx-white-2 "#F8F8F8")
       (smyx-white-3 "#fffafa"))
@@ -181,7 +181,7 @@
      ((,class (:foreground ,smyx-gray-7
                            :background ,smyx-gray-6
                            :box (:line-width -1 :color ,smyx-blue-5)))))
-   `(region ((,class (:background ,smyx-blue))))
+   `(region ((,class (:background ,smyx-gray-9))))
    `(secondary-selection ((,class (:background ,smyx-bg+2))))
    `(trailing-whitespace ((,class (:background ,smyx-red))))
    `(vertical-border ((,class (:foreground ,smyx-gray-5 :background ,smyx-black))))
@@ -457,7 +457,7 @@
    `(jabber-title-large ((,class (:height 1.3 :weight bold))))
 
    ;; linum-mode
-   `(linum ((,class (:foreground ,smyx-green :background ,smyx-bg))))
+   `(linum ((,class (:foreground ,smyx-gray-9 :background ,smyx-bg))))
 
    ;; magit
    `(magit-section-title ((,class (:foreground ,smyx-pink-1))))
@@ -640,7 +640,7 @@
         (,class (:foreground ,smyx-gray :background ,smyx-black))))
 
      `(elscreen-tab-current-screen-face (
-        (,class (:foreground ,smyx-gray :background ,smyx-black-3))))
+        (,class (:foreground ,smyx-gray-5 :background ,smyx-gray))))
     
 
   ;;; ansi-term
