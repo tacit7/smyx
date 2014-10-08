@@ -133,10 +133,10 @@
    `(header-line ((,class (:foreground ,smyx-yellow
                                        :background ,smyx-bg-1
                                        :box (:line-width -1 :style released-button)))))
-   `(highlight ((,class (:background ,smyx-gray-5))))
+   `(highlight ((,class (:background ,smyx-gray-8))))
 
    ;;; highlight current line
-   `(hl-line ((,class (:background ,smyx-green-2))))
+   `(hl-line ((,class (:background ,smyx-bg+2))))
    
    ;;; compilation
    `(compilation-column-face ((,class (:foreground ,smyx-blue))))
