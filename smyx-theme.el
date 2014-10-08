@@ -191,7 +191,7 @@
 
    ;;; font lock
    `(font-lock-builtin-face ((,class (:foreground ,smyx-orange))))
-   `(font-lock-comment-face ((,class (:foreground ,smyx-gray :italic t))))
+   `(font-lock-comment-face ((,class (:foreground ,smyx-gray-9 :italic t))))
    ;; `(font-lock-comment-delimiter-face ((,class (:foreground ,smyx-green)))) 
    `(font-lock-constant-face ((,class (:foreground ,smyx-red))))
    ;; `(font-lock-doc-face ((,class (:foreground ,smyx-green+0))))
