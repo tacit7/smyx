@@ -726,6 +726,10 @@
    `(erm-syn-errline ((,class (:color ,smyx-red))))
    `(erm-syn-warnline ((,class (:color ,smyx-red))))
 
+   ;; guide-key
+   `(guide-key/highlight-command-face ((t (:foreground ,smyx-green))))
+   `(guide-key/key-face ((t (:foreground ,smyx-white))))
+   `(guide-key/prefix-command-face ((t (:foreground ,smyx-yellow))))
 
    ;; yascroll
    `(yascroll:thumb-text-area ((,class (:background ,smyx-bg-1))))
