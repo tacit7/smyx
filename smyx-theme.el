@@ -134,6 +134,8 @@
                                        :background ,smyx-bg-1
                                        :box (:line-width -1 :style released-button)))))
    `(highlight ((,class (:background ,smyx-gray-5))))
+
+   ;;; highlight current line
    `(hl-line ((,class (:background ,smyx-green-2))))
    
    ;;; compilation
