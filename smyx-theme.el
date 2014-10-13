@@ -184,7 +184,7 @@
      ((,class (:foreground ,smyx-gray-7
                            :background ,smyx-gray-6
                            :box (:line-width -1 :color ,smyx-blue-5)))))
-   `(region ((,class (:background ,smyx-gray-9))))
+   `(region ((,class (:background ,smyx-black-3))))
    `(secondary-selection ((,class (:background ,smyx-bg+2))))
    `(trailing-whitespace ((,class (:background ,smyx-red))))
    `(vertical-border ((,class (:foreground ,smyx-gray-5 :background ,smyx-black))))
