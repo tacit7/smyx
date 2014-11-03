@@ -180,10 +180,11 @@
      ((,class (:foreground ,smyx-blue ;;; dominant
                            :background ,smyx-black-2))))
    ;; `(mode-line-buffer-id ((,class (:foreground ,smyx-yellow :weight bold))))
+
    `(mode-line-inactive
      ((,class (:foreground ,smyx-gray-7
-                           :background ,smyx-gray-6
-                           :box (:line-width -1 :color ,smyx-blue-5)))))
+                           :background ,smyx-gray-6))))
+   
    `(region ((,class (:background ,smyx-black-3))))
    `(secondary-selection ((,class (:background ,smyx-bg+2))))
    `(trailing-whitespace ((,class (:background ,smyx-red))))
