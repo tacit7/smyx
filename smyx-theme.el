@@ -72,6 +72,7 @@
       (smyx-yellow-3 "#D8FA3C")
       (smyx-yellow-4 "#E9C062")
       (smyx-yellow-5 "#ffd700")
+      (smyx-yellow-org-todo "#DDDD00")
 
       (smyx-green-2 "#617a11")
       (smyx-green-1 "#91Ba31")
@@ -80,6 +81,7 @@
       (smyx-green+2 "#9fc59f")
       (smyx-green+3 "#afd8af")
       (smyx-green+4 "#bfebbf")
+      (smyx-green-blue-org "#BBFFD1")   
 
 
       (smyx-cyan "#96D9F1")
@@ -535,39 +537,43 @@
    `(mumamo-background-chunk-submode4 ((,class (:background ,smyx-bg+1))))
 
    ;; org-mode
-   `(org-document-title ((,class (:foreground ,smyx-green :background ,smyx-black :weight bold :height 1.5))))
-   `(org-document-info ((,class (:foreground ,smyx-blue :background ,smyx-black :weight bold))))
+   `(org-document-title ((,class (:foreground ,smyx-blue :background ,smyx-black :weight bold ))))
+   `(org-document-info ((,class (:foreground ,smyx-green :background ,smyx-black :weight bold))))
    `(org-document-info-keyword ((,class (:foreground ,smyx-gray-2 :background ,smyx-black))))
    `(org-agenda-date-today
      ((,class (:foreground ,smyx-yellow :slant italic :weight bold))) t)
    `(org-agenda-structure
      ((,class (:inherit font-lock-comment-face))))
    `(org-archived ((,class (:slant italic))))
-   `(org-checkbox ((,class (:background ,smyx-gray-2 :foreground ,smyx-black
+   `(org-checkbox ((,class (:background ,smyx-gray-2 :foreground ,smyx-white
                                    :box (:line-width 1 :style released-button)))))
-   `(org-date ((,class (:foreground ,smyx-green :underline t))))
-   `(org-done ((,class (:bold t :weight bold :foreground ,smyx-green
+   `(org-date ((,class (:foreground ,smyx-green))))
+   `(org-done ((,class (:bold t :weight bold :foreground ,smyx-green-1
                               :box (:line-width 1 :style none)))))
-   `(org-todo ((,class (:bold t :foreground ,smyx-orange :weight bold
+   `(org-todo ((,class (:bold t :foreground ,smyx-yellow-org-todo :weight bold
                               :box (:line-width 1 :style none)))))
-   `(org-level-1 ((,class (:foreground ,smyx-pink :height 1.3))))
-   `(org-level-2 ((,class (:foreground ,smyx-yellow :height 1.2))))
-   `(org-level-3 ((,class (:foreground ,smyx-blue :height 1.1))))
-   `(org-level-4 ((,class (:foreground ,smyx-green))))
-   `(org-level-5 ((,class (:foreground ,smyx-orange))))
-   `(org-level-6 ((,class (:foreground ,smyx-pink))))
-   `(org-level-7 ((,class (:foreground ,smyx-green))))
-   `(org-level-8 ((,class (:foreground ,smyx-blue))))
-   `(org-link ((,class (:foreground ,smyx-blue :underline t))))
+
+   `(org-level-1 ((,class (:foreground ,smyx-blue ))))
+   `(org-level-2 ((,class (:foreground ,smyx-green ))))
+   `(org-level-3 ((,class (:foreground ,smyx-yellow ))))
+   `(org-level-4 ((,class (:foreground ,smyx-orange))))
+   `(org-level-5 ((,class (:foreground ,smyx-blue))))
+   `(org-level-6 ((,class (:foreground ,smyx-green))))
+   `(org-level-7 ((,class (:foreground ,smyx-yellow))))
+   `(org-level-8 ((,class (:foreground ,smyx-orange))))
+
+   `(org-link ((,class (:foreground ,smyx-blue+1 :underline t))))
    `(org-tag ((,class (:bold t :weight bold))))
    `(org-column ((,class (:background ,smyx-yellow :foreground ,smyx-black))))
-   `(org-column-title ((,class (:background ,smyx-bg-1 :underline t :weight bold))))
+   `(org-column-title ((,class (:background ,smyx-bg-1 :weight bold))))
    `(org-block ((,class (:foreground ,smyx-fg :background ,smyx-bg-05))))
    `(org-block-begin-line 
      ((,class (:foreground "#008ED1" :background ,smyx-bg-1))))
    `(org-block-background ((,class (:background ,smyx-bg-05))))
    `(org-block-end-line 
      ((,class (:foreground "#008ED1" :background ,smyx-bg-1))))
+   `(org-hide ((,class (:foreground ,smyx-bg)))) ;; hide leading stars
+   `(org-headline-done ((,class (:foreground ,smyx-green-1))))
 
    ;; `(org-deadline-announce ((,class (:foreground ,smyx-red-1))))
    ;; `(org-scheduled ((,class (:foreground ,smyx-green+4))))
@@ -579,8 +585,6 @@
    ;; `(org-upcoming-deadline ((,class (:inherit font-lock-keyword-face))))
    ;; `(org-warning ((,class (:bold t :foreground ,smyx-red :weight bold :underline nil))))
    ;; `(org-formula ((,class (:foreground ,smyx-yellow-2))))
-   ;; `(org-headline-done ((,class (:foreground ,smyx-green+3))))
-   ;; `(org-hide ((,class (:foreground ,smyx-bg-1))))
 
    ;; outline
    `(outline-8 ((,class (:inherit default))))
