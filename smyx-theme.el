@@ -466,12 +466,21 @@
    `(linum ((,class (:foreground ,smyx-gray-9 :background ,smyx-bg))))
 
    ;; magit
-   `(magit-section-title ((,class (:foreground ,smyx-pink-1))))
-   `(magit-branch ((,class (:foreground ,smyx-yellow-5))))
-   `(magit-item-highlight ((,class (:background ,smyx-gray-8))))
+   `(magit-section-title ((,class (:foreground ,smyx-green))))
+   `(magit-branch ((,class (:foreground ,smyx-blue))))
+   `(magit-item-highlight ((,class (:background ,smyx-black-3))))
+   `(magit-log-sha1 ((,class (:foreground ,smyx-blue))))
+   `(magit-log-author ((,class (:foreground ,smyx-green))))
+   `(magit-log-head-label-default ((,class (:background ,smyx-bg :foreground ,smyx-green))))
+   `(magit-log-head-label-head ((,class (:background ,smyx-bg :foreground ,smyx-green))))
+   `(magit-log-head-label-remote  ((,class (:background ,smyx-bg :foreground ,smyx-yellow))))
+   `(magit-log-head-label-tags    ((,class (:background ,smyx-bg :foreground ,smyx-yellow))))
+   `(magit-log-head-label-local    ((,class (:background ,smyx-bg :foreground ,smyx-blue))))
+ 
+
    `(magit-diff-add ((,class (:foreground ,smyx-green))))
    `(magit-diff-del ((,class (:foreground ,smyx-red))))
-   `(magit-diff-hunk-header ((,class (:foreground ,smyx-orange))))
+   `(magit-diff-hunk-header ((,class (:foreground ,smyx-yellow))))
 
    `(eval-sexp-fu-flash ((,class (:background ,smyx-gray-8 :foreground ,smyx-pink-2))))
 
